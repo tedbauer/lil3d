@@ -1,26 +1,24 @@
 #include <stdio.h>
+#include <assert.h>
 #include <GLFW/glfw3.h>
 
-void process_input(GLFWwindow *window) {
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-		glfwSetWindowShouldClose(window, GLFW_TRUE);
-	}
+GLFWwindow* window = NULL;
+
+void render_window()
+{
+	glfwPollEvents();
 }
 
-int main()
+int is_close_requested()
+{
+	assert(window != NULL);
+	return glfwWindowShouldClose(window);
+}
+
+void init_window(int width, int height, char* title)
 {
 	glfwInit();
-	GLFWwindow* window = glfwCreateWindow(
+	window = glfwCreateWindow(
 		640, 480, "Lil 3D", NULL, NULL
 	);
-	glfwMakeContextCurrent(window);
-
-	while (!glfwWindowShouldClose(window)) {
-		process_input(window);
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	}
-
-	glfwTerminate();
-	return 0;
 }
