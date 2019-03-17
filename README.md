@@ -14,4 +14,4 @@ Lil 3D requires:
 install it on OSX with [Homebrew][brew] by typing `brew install glfw3`.
 
 [glfw]: https://www.glfw.org/
-[brew:] https://brew.sh/
+[brew]: https://brew.sh/
