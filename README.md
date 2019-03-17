@@ -11,6 +11,7 @@ An effort to learn about some graphics! Based on the engine developed in
 Lil 3D requires:
 
 - [GLFW][glfw], a multi-platform library for OpenGL. You can
-install it on OSX with Homebrew by typing `brew install glfw3`.
+install it on OSX with [Homebrew][brew] by typing `brew install glfw3`.
 
 [glfw]: https://www.glfw.org/
+[brew:] https://brew.sh/
