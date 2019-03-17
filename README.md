@@ -1,9 +1,10 @@
 # Lil 3D Game Engine
 
 An effort to learn about some graphics! Based on the engine developed in
-thebennybox's [Youtube series][yt], ported to C!
+[thebennybox][bbox's [Youtube series][yt], ported to C!
 
 [yt]: https://www.youtube.com/playlist?list=PLEETnX-uPtBXP_B2yupUKlflXBznWIlL5
+[bbox]: https://www.youtube.com/user/thebennybox
 
 ## Dependencies
 
